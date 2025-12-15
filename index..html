@@ -14,7 +14,7 @@
     <p class="p1">Logo</p>
   </div>
 
-   <div class="hero-section">
+  <div class="hero-section">
     <p class="p2" id="carousel-text">Image 1</p>
 
     <div class="dots-section">
@@ -94,109 +94,140 @@
 
       <h3>Step:1 Personal Info</h3>
       <div class="fields">
-        <input type="text" placeholder="first name">
-        <input type="text" placeholder="last name">
+        <div class="input-wrapper">
+          <input type="text" placeholder="first name" class="validate">
+        </div>
+        <div class="input-wrapper">
+          <input type="text" placeholder="last name" class="validate">
+        </div>
       </div>
       <div class="fields">
-        <input type="email" placeholder="email">
-        <select name="gender" id="gender">
-          <option value="">Gender</option>
-          <option value="male">Male</option>
-          <option value="female">Female</option>
-        </select>
+        <div class="input-wrapper">
+          <input type="email" placeholder="email" class="validate">
+        </div>
+        <div class="input-wrapper">
+          <select name="gender" id="gender" class="validate">
+            <option value="">Gender</option>
+            <option value="male">Male</option>
+            <option value="female">Female</option>
+          </select>
+        </div>
       </div>
       <div class="fields">
-        <input type="date" placeholder="DOB">
-        <input type="tel" placeholder="mobile">
+        <div class="input-wrapper">
+          <input type="date" placeholder="DOB" class="validate">
+        </div>
+        <div class="input-wrapper">
+          <input type="tel" placeholder="mobile" class="validate">
+        </div>
       </div>
 
       <h3>Qualification</h3>
       <div class="fields">
-        <input type="text" placeholder="Education fields">
-        <select name="skills" id="skills">
-          <option value="">Skills</option>
-          <option value="html/css"> HTML CSS</option>
-          <option value="react">React</option>
-        </select>
+        <div class="input-wrapper">
+          <input type="text" placeholder="Education fields" class="validate">
+        </div>
+        <div class="input-wrapper">
+          <select name="skills" id="skills" class="validate">
+            <option value="">Skills</option>
+            <option value="html/css"> HTML CSS</option>
+            <option value="react">React</option>
+          </select>
+        </div>
       </div>
+      
       <h4>Languages</h4>
       <div class="languages">
-        <div class="box"><input type="checkbox" name="Telugu"> Telugu</div>
-        <div class="box"><input type="checkbox" name="Hindi"> Hindi</div>
-        <div class="box"><input type="checkbox" name="English"> English</div>
-        <div class="box"><input type="checkbox" name="Others"> Others</div>
+        <div class="box"><input type="checkbox" name="Telugu" class="chk"> Telugu</div>
+        <div class="box"><input type="checkbox" name="Hindi" class="chk"> Hindi</div>
+        <div class="box"><input type="checkbox" name="English" class="chk"> English</div>
+        <div class="box"><input type="checkbox" name="Others" class="chk"> Others</div>
       </div>
+      <div id="lang-error"></div>
 
       <h3>Step:2 Address</h3>
       <div class="fields">
-        <input type="text" placeholder="Address1">
-        <input type="text" placeholder="Address2">
+        <div class="input-wrapper">
+          <input type="text" placeholder="Address1" class="validate">
+        </div>
+        <div class="input-wrapper">
+          <input type="text" placeholder="Address2" class="validate">
+        </div>
       </div>
       <div class="fields">
-        <input type="text" placeholder="Address3">
-        <select name="city" id="city">
-          <option value="">City</option>
-          <option value="Tirupati">Tirupati</option>
-          <option value="Hyderabad">Hyderabad</option>
-        </select>
+        <div class="input-wrapper">
+          <input type="text" placeholder="Address3" class="validate">
+        </div>
+        <div class="input-wrapper">
+          <select name="city" id="city" class="validate">
+            <option value="">City</option>
+            <option value="Tirupati">Tirupati</option>
+            <option value="Hyderabad">Hyderabad</option>
+          </select>
+        </div>
       </div>
       <div class="fields">
-        <select name="state" id="state">
-          <option value="">State</option>
-          <option value="Andhra Pradesh">Andhra Pradesh</option>
-          <option value="Telangana">Telangana</option>
-        </select>
-        <input type="number" placeholder="Pincode">
-      </div>
-
-      <button type="submit">Submit</button>
-    </div>
-
-    </div>
-
-
-    <div class="form-preview">
-      <h2>Form Preview</h2>
-
-      <div class="inner-container">
-        <h3>Step1: Personal Info</h3>
-        <div class="field-output">
-          <p class="bold">First Name: <span>Shiva</span></p>
-          <p class="bold">Last Name: <span>Rishi</span></p>
+        <div class="input-wrapper">
+          <select name="state" id="state" class="validate">
+            <option value="">State</option>
+            <option value="Andhra Pradesh">Andhra Pradesh</option>
+            <option value="Telangana">Telangana</option>
+          </select>
         </div>
-        <div class="field-output">
-          <p class="bold">Email: <span>shivarishi@gamil.com</span></p>
-          <p class="bold">Gender: <span>Male</span></p>
-        </div>
-        <div class="field-output">
-          <p class="bold">Date of Birth: <span>10-7-2002</span></p>
-          <p class="bold">Mobile: <span>9999999999</span></p>
-        </div>
-
-        <h3>Qualification</h3>
-        <div class="field-output">
-          <p class="bold">Education: <span>B.Tech</span> </p>
-          <p class="bold">Skills: <span>HTML, CSS, JS</span></p>
-        </div>
-        <div class="field-output">
-          <p class="bold">Languages: <span>Telugu, English, Hindi</span></p>
-        </div>
-        <h3>Step2: Address</h3>
-        <div class="field-output">
-          <p class="bold">Address1: <span>Street 1</span></p>
-          <p class="bold">Address2: <span>Area 51</span></p>
-        </div>
-        <div class="field-output">
-          <p class="bold">Address3: <span>City 123</span></p>
-          <p class="bold">City: <span>Tirupati</span></p>
-        </div>
-        <div class="field-output">
-          <p class="bold">State: <span>Andhra Pradesh</span></p>
-          <p class="bold">Pincode: <span>517501</span></p>
+        <div class="input-wrapper">
+          <input type="number" placeholder="Pincode" class="validate">
         </div>
       </div>
 
-      <script src="script.js"></script>
+      <button type="submit" id="submitBtn">Submit</button>
+    </div>
+
+  </div>
+
+
+  <div class="form-preview">
+    <h2>Form Preview</h2>
+
+    <div class="inner-container">
+      <h3>Step1: Personal Info</h3>
+      <div class="field-output">
+        <p class="bold">First Name: <span>Shiva</span></p>
+        <p class="bold">Last Name: <span>Rishi</span></p>
+      </div>
+      <div class="field-output">
+        <p class="bold">Email: <span>shivarishi@gamil.com</span></p>
+        <p class="bold">Gender: <span>Male</span></p>
+      </div>
+      <div class="field-output">
+        <p class="bold">Date of Birth: <span>10-7-2002</span></p>
+        <p class="bold">Mobile: <span>9999999999</span></p>
+      </div>
+
+      <h3>Qualification</h3>
+      <div class="field-output">
+        <p class="bold">Education: <span>B.Tech</span> </p>
+        <p class="bold">Skills: <span>HTML, CSS, JS</span></p>
+      </div>
+      <div class="field-output">
+        <p class="bold">Languages: <span>Telugu, English, Hindi</span></p>
+      </div>
+      <h3>Step2: Address</h3>
+      <div class="field-output">
+        <p class="bold">Address1: <span>Street 1</span></p>
+        <p class="bold">Address2: <span>Area 51</span></p>
+      </div>
+      <div class="field-output">
+        <p class="bold">Address3: <span>City 123</span></p>
+        <p class="bold">City: <span>Tirupati</span></p>
+      </div>
+      <div class="field-output">
+        <p class="bold">State: <span>Andhra Pradesh</span></p>
+        <p class="bold">Pincode: <span>517501</span></p>
+      </div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
 </body>
 
 </html>
